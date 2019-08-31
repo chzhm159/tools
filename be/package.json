@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "egg-bin dev",
+    "dev": "node node_modules/egg-scripts/bin/egg-scripts start --env=local --workers=2",
     "start": "egg-scripts start --daemon",
     "stop": "egg-scripts stop"
   },

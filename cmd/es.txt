@@ -35,7 +35,7 @@ curl -X PUT "localhost:9200/dream?pretty" -H 'Content-Type: application/json' -d
 }'
 curl -s -H 'Content-Type: application/x-ndjson' -XPOST localhost:9200/_bulk --data-binary '@/Users/czm/code/crawler/zgjm/自然类/地理环境/澳洲.json'
 
-curl -s -H "Content-Type: application/x-ndjson" -XPOST localhost:9200/_bulk --data-binary "@/Users/czm/code/crawler/zgjm/_allData.json"
+curl -s -H "Content-Type: application/x-ndjson" -XPOST localhost:9200/_bulk --data-binary "@/Users/czm/code/crawler/data.json"
 
 
 
