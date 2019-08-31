@@ -86,7 +86,7 @@
       "cookieMaxAge": "1y"
     },
     "watcher": {
-      "type": "default",
+      "type": "development",
       "eventSources": {
         "default": "/Users/czm/code/tools/be/node_modules/egg-watcher/lib/event-sources/default",
         "development": "/Users/czm/code/tools/be/node_modules/egg-watcher/lib/event-sources/development"
@@ -117,6 +117,13 @@
         "cron": "0 30 4 * * *"
       }
     },
+    "development": {
+      "watchDirs": [],
+      "ignoreDirs": [],
+      "fastReady": false,
+      "reloadOnDebug": true,
+      "overrideDefault": false
+    },
     "logrotator": {
       "filesRotateByHour": null,
       "hourDelimiter": "-",
@@ -131,13 +138,12 @@
       "dir": "/Users/czm/code/tools/be/app/public",
       "dynamic": true,
       "preload": false,
-      "buffer": true,
-      "maxFiles": 1000,
-      "maxAge": 31536000
+      "buffer": false,
+      "maxFiles": 1000
     },
     "view": {
       "root": "/Users/czm/code/tools/be/app/view",
-      "cache": true,
+      "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "nunjucks",
       "mapping": {
@@ -149,9 +155,9 @@
       "throwOnUndefined": false,
       "trimBlocks": false,
       "lstripBlocks": false,
-      "cache": true
+      "cache": false
     },
-    "env": "prod",
+    "env": "local",
     "name": "dream",
     "keys": "<String len: 5>",
     "proxy": false,
@@ -172,9 +178,13 @@
       "author": "",
       "license": "mit",
       "dependencies": {
+        "@elastic/elasticsearch": "^7.3.0",
+        "co-wechat": "^2.4.0",
         "egg": "^2.23.0",
+        "egg-cluster": "^1.25.0",
         "egg-scripts": "^2.11.0",
-        "egg-view-nunjucks": "^2.2.0"
+        "egg-view-nunjucks": "^2.2.0",
+        "lodash": "^4.17.15"
       },
       "devDependencies": {
         "egg-bin": "^4.13.0"
@@ -213,19 +223,21 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "/Users/czm/logs/dream",
+      "dir": "/Users/czm/code/tools/be/logs/dream",
       "encoding": "utf8",
-      "env": "prod",
+      "env": "local",
       "level": "INFO",
       "consoleLevel": "INFO",
-      "disableConsoleAfterReady": true,
+      "disableConsoleAfterReady": false,
       "outputJSON": false,
       "buffer": true,
       "appLogName": "dream-web.log",
       "coreLogName": "egg-web.log",
       "agentLogName": "egg-agent.log",
       "errorLogName": "common-error.log",
-      "coreLogger": {},
+      "coreLogger": {
+        "consoleLevel": "WARN"
+      },
       "allowDebugAtProd": false,
       "type": "agent"
     },
@@ -264,9 +276,12 @@
     "serverTimeout": null,
     "cluster": {
       "listen": {
-        "path": "/var/run/node-web-1.sock",
-        "port": 7001,
-        "hostname": "127.0.0.1"
+        "path": "",
+        "port": 7000,
+        "hostname": "127.0.0.1",
+        "workers": 2,
+        "daemon": true,
+        "title": "eggjs-dream-dev"
       }
     },
     "clusterClient": {
@@ -274,9 +289,18 @@
       "responseTimeout": 60000
     },
     "onClientError": null,
+    "middleware": [
+      "page404"
+    ],
+    "esConfig": {
+      "node": "http://localhost:9200",
+      "maxRetries": 3,
+      "requestTimeout": 60000,
+      "sniffOnStart": true
+    },
     "coreMiddlewares": "~config~coreMiddleware",
-    "appMiddlewares": [],
-    "appMiddleware": "~config~appMiddlewares"
+    "appMiddlewares": "~config~middleware",
+    "appMiddleware": "~config~middleware"
   },
   "plugins": {
     "session": {
@@ -374,6 +398,21 @@
       "from": "/Users/czm/code/tools/be/node_modules/egg/config/plugin.js",
       "path": "/Users/czm/code/tools/be/node_modules/egg-multipart",
       "version": "2.9.0"
+    },
+    "development": {
+      "enable": true,
+      "package": "egg-development",
+      "name": "development",
+      "dependencies": [
+        "watcher"
+      ],
+      "optionalDependencies": [],
+      "env": [
+        "local"
+      ],
+      "from": "/Users/czm/code/tools/be/node_modules/egg/config/plugin.js",
+      "path": "/Users/czm/code/tools/be/node_modules/egg-development",
+      "version": "2.4.3"
     },
     "logrotator": {
       "enable": true,

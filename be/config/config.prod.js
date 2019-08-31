@@ -1,7 +1,8 @@
 exports.cluster = {
   listen: {
-    port: 7001,
-    // hostname: '127.0.0.1',
-    path: '/var/run/egg.sock'
+    workers:2,
+    daemon:true,
+    path: '/var/run/node-web-1.sock',
+    title:"eggjs-dream"
   }
 }

@@ -19,8 +19,20 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/news",
-    "regexp": "/^\\/news(?:\\/(?=$))?$/",
+    "path": "/wechat",
+    "regexp": "/^\\/wechat(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/wechat",
+    "regexp": "/^\\/wechat(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

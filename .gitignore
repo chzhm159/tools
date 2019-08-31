@@ -61,3 +61,4 @@ typings/
 .next
 be/node_modules
 be/logs
+be/run

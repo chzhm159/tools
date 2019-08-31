@@ -1,4 +1,14 @@
 {
+  "cluster": {
+    "listen": {
+      "port": "/Users/czm/code/tools/be/config/config.default.js",
+      "workers": "/Users/czm/code/tools/be/config/config.default.js",
+      "daemon": "/Users/czm/code/tools/be/config/config.default.js",
+      "hostname": "/Users/czm/code/tools/be/config/config.default.js",
+      "title": "/Users/czm/code/tools/be/config/config.default.js",
+      "path": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
+    }
+  },
   "keys": "/Users/czm/code/tools/be/config/config.default.js",
   "view": {
     "defaultViewEngine": "/Users/czm/code/tools/be/config/config.default.js",
@@ -6,27 +16,19 @@
       ".tpl": "/Users/czm/code/tools/be/config/config.default.js"
     },
     "root": "/Users/czm/code/tools/be/node_modules/egg-view/config/config.default.js",
-    "cache": "/Users/czm/code/tools/be/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/czm/code/tools/be/node_modules/egg-view/config/config.local.js",
     "defaultExtension": "/Users/czm/code/tools/be/node_modules/egg-view/config/config.default.js"
   },
-  "cluster": {
-    "listen": {
-      "port": "/Users/czm/code/tools/be/config/config.prod.js",
-      "hostname": "/Users/czm/code/tools/be/config/config.prod.js",
-      "path": "/Users/czm/code/tools/be/config/config.prod.js"
-    }
-  },
-  "session": {
-    "maxAge": "/Users/czm/code/tools/be/node_modules/egg-session/config/config.default.js",
-    "key": "/Users/czm/code/tools/be/node_modules/egg-session/config/config.default.js",
-    "httpOnly": "/Users/czm/code/tools/be/node_modules/egg-session/config/config.default.js",
-    "encrypt": "/Users/czm/code/tools/be/node_modules/egg-session/config/config.default.js"
+  "middleware": "/Users/czm/code/tools/be/config/config.default.js",
+  "esConfig": {
+    "node": "/Users/czm/code/tools/be/config/config.default.js",
+    "maxRetries": "/Users/czm/code/tools/be/config/config.default.js",
+    "requestTimeout": "/Users/czm/code/tools/be/config/config.default.js",
+    "sniffOnStart": "/Users/czm/code/tools/be/config/config.default.js"
   },
   "security": {
-    "domainWhiteList": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
-    "protocolWhiteList": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
-    "defaultMiddleware": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
     "csrf": {
+      "refererWhiteList": "/Users/czm/code/tools/be/config/config.default.js",
       "enable": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
       "type": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
       "ignoreJSON": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
@@ -35,15 +37,17 @@
       "sessionName": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
       "headerName": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
       "bodyName": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
-      "queryName": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
-      "refererWhiteList": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js"
+      "queryName": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js"
     },
+    "domainWhiteList": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
     "xframe": {
       "enable": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
       "value": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js"
     },
     "hsts": {
-      "enable": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+      "enable": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.local.js",
       "maxAge": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
       "includeSubdomains": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js"
     },
@@ -76,6 +80,12 @@
       "checkAddress": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js"
     }
   },
+  "session": {
+    "maxAge": "/Users/czm/code/tools/be/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/czm/code/tools/be/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/czm/code/tools/be/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/czm/code/tools/be/node_modules/egg-session/config/config.default.js"
+  },
   "helper": {
     "shtml": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js"
   },
@@ -98,7 +108,7 @@
     "cookieMaxAge": "/Users/czm/code/tools/be/node_modules/egg-i18n/config/config.default.js"
   },
   "watcher": {
-    "type": "/Users/czm/code/tools/be/node_modules/egg-watcher/config/config.default.js",
+    "type": "/Users/czm/code/tools/be/node_modules/egg-watcher/config/config.local.js",
     "eventSources": {
       "default": "/Users/czm/code/tools/be/node_modules/egg-watcher/config/config.default.js",
       "development": "/Users/czm/code/tools/be/node_modules/egg-watcher/config/config.default.js"
@@ -129,6 +139,13 @@
       "cron": "/Users/czm/code/tools/be/node_modules/egg-multipart/config/config.default.js"
     }
   },
+  "development": {
+    "watchDirs": "/Users/czm/code/tools/be/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/czm/code/tools/be/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/czm/code/tools/be/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/czm/code/tools/be/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/czm/code/tools/be/node_modules/egg-development/config/config.default.js"
+  },
   "logrotator": {
     "filesRotateByHour": "/Users/czm/code/tools/be/node_modules/egg-logrotator/config/config.default.js",
     "hourDelimiter": "/Users/czm/code/tools/be/node_modules/egg-logrotator/config/config.default.js",
@@ -143,16 +160,15 @@
     "dir": "/Users/czm/code/tools/be/node_modules/egg-static/config/config.default.js",
     "dynamic": "/Users/czm/code/tools/be/node_modules/egg-static/config/config.default.js",
     "preload": "/Users/czm/code/tools/be/node_modules/egg-static/config/config.default.js",
-    "buffer": "/Users/czm/code/tools/be/node_modules/egg-static/config/config.prod.js",
-    "maxFiles": "/Users/czm/code/tools/be/node_modules/egg-static/config/config.default.js",
-    "maxAge": "/Users/czm/code/tools/be/node_modules/egg-static/config/config.prod.js"
+    "buffer": "/Users/czm/code/tools/be/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/czm/code/tools/be/node_modules/egg-static/config/config.default.js"
   },
   "nunjucks": {
     "autoescape": "/Users/czm/code/tools/be/node_modules/egg-view-nunjucks/config/config.default.js",
     "throwOnUndefined": "/Users/czm/code/tools/be/node_modules/egg-view-nunjucks/config/config.default.js",
     "trimBlocks": "/Users/czm/code/tools/be/node_modules/egg-view-nunjucks/config/config.default.js",
     "lstripBlocks": "/Users/czm/code/tools/be/node_modules/egg-view-nunjucks/config/config.default.js",
-    "cache": "/Users/czm/code/tools/be/node_modules/egg-view-nunjucks/config/config.default.js"
+    "cache": "/Users/czm/code/tools/be/node_modules/egg-view-nunjucks/config/config.local.js"
   },
   "env": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
   "name": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
@@ -174,9 +190,13 @@
     "author": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
     "license": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
     "dependencies": {
+      "@elastic/elasticsearch": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+      "co-wechat": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
       "egg": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+      "egg-cluster": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
       "egg-scripts": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
-      "egg-view-nunjucks": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
+      "egg-view-nunjucks": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+      "lodash": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {
       "egg-bin": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
@@ -227,7 +247,9 @@
     "coreLogName": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
     "agentLogName": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
     "errorLogName": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
-    "coreLogger": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/czm/code/tools/be/node_modules/egg/config/config.local.js"
+    },
     "allowDebugAtProd": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
   },
   "httpclient": {
