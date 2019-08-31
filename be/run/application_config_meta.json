@@ -1,0 +1,265 @@
+{
+  "keys": "/Users/czm/code/tools/be/config/config.default.js",
+  "view": {
+    "defaultViewEngine": "/Users/czm/code/tools/be/config/config.default.js",
+    "mapping": {
+      ".tpl": "/Users/czm/code/tools/be/config/config.default.js"
+    },
+    "root": "/Users/czm/code/tools/be/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/czm/code/tools/be/node_modules/egg-view/config/config.default.js",
+    "defaultExtension": "/Users/czm/code/tools/be/node_modules/egg-view/config/config.default.js"
+  },
+  "cluster": {
+    "listen": {
+      "port": "/Users/czm/code/tools/be/config/config.prod.js",
+      "hostname": "/Users/czm/code/tools/be/config/config.prod.js",
+      "path": "/Users/czm/code/tools/be/config/config.prod.js"
+    }
+  },
+  "session": {
+    "maxAge": "/Users/czm/code/tools/be/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/czm/code/tools/be/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/czm/code/tools/be/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/czm/code/tools/be/node_modules/egg-session/config/config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+    "csrf": {
+      "enable": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+      "type": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js"
+    },
+    "xframe": {
+      "enable": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+      "maxAge": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/czm/code/tools/be/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/czm/code/tools/be/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/czm/code/tools/be/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/czm/code/tools/be/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/czm/code/tools/be/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/czm/code/tools/be/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/czm/code/tools/be/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/czm/code/tools/be/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/czm/code/tools/be/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/czm/code/tools/be/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/czm/code/tools/be/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/czm/code/tools/be/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/czm/code/tools/be/node_modules/egg-watcher/config/config.default.js",
+    "eventSources": {
+      "default": "/Users/czm/code/tools/be/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/czm/code/tools/be/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/czm/code/tools/be/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/czm/code/tools/be/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/czm/code/tools/be/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/czm/code/tools/be/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/czm/code/tools/be/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/czm/code/tools/be/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/czm/code/tools/be/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/czm/code/tools/be/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/czm/code/tools/be/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/czm/code/tools/be/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/czm/code/tools/be/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/czm/code/tools/be/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/czm/code/tools/be/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/czm/code/tools/be/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/czm/code/tools/be/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/czm/code/tools/be/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/czm/code/tools/be/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/czm/code/tools/be/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/czm/code/tools/be/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/czm/code/tools/be/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/czm/code/tools/be/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/czm/code/tools/be/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/czm/code/tools/be/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/czm/code/tools/be/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/czm/code/tools/be/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/czm/code/tools/be/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/czm/code/tools/be/node_modules/egg-static/config/config.prod.js",
+    "maxFiles": "/Users/czm/code/tools/be/node_modules/egg-static/config/config.default.js",
+    "maxAge": "/Users/czm/code/tools/be/node_modules/egg-static/config/config.prod.js"
+  },
+  "nunjucks": {
+    "autoescape": "/Users/czm/code/tools/be/node_modules/egg-view-nunjucks/config/config.default.js",
+    "throwOnUndefined": "/Users/czm/code/tools/be/node_modules/egg-view-nunjucks/config/config.default.js",
+    "trimBlocks": "/Users/czm/code/tools/be/node_modules/egg-view-nunjucks/config/config.default.js",
+    "lstripBlocks": "/Users/czm/code/tools/be/node_modules/egg-view-nunjucks/config/config.default.js",
+    "cache": "/Users/czm/code/tools/be/node_modules/egg-view-nunjucks/config/config.default.js"
+  },
+  "env": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+  "name": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "version": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "description": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "main": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "scripts": {
+      "dev": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+      "start": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+      "stop": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
+    },
+    "author": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "license": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "dependencies": {
+      "egg": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+      "egg-view-nunjucks": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "egg-bin": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
+    }
+  },
+  "baseDir": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "strict": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+      "depth": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "env": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "level": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "coreLogger": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "allowDebugAtProd": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "logging": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+  "clusterClient": {
+    "maxWaitTime": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
+}

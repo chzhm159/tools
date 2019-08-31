@@ -1,0 +1,22 @@
+{
+  "name": "dream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "egg-bin dev",
+    "start": "egg-scripts start --daemon",
+    "stop": "egg-scripts stop"
+  },
+  "author": "",
+  "license": "mit",
+  "dependencies": {
+    "egg": "^2.23.0",
+    "egg-cluster": "^1.25.0",
+    "egg-scripts": "^2.11.0",
+    "egg-view-nunjucks": "^2.2.0"
+  },
+  "devDependencies": {
+    "egg-bin": "^4.13.0"
+  }
+}
