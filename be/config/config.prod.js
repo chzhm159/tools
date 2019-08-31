@@ -1,3 +1,7 @@
+exports.wechat = {
+  debug: false
+};
+
 exports.cluster = {
   listen: {
     workers:2,

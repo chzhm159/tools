@@ -26,10 +26,13 @@
     "requestTimeout": "/Users/czm/code/tools/be/config/config.default.js",
     "sniffOnStart": "/Users/czm/code/tools/be/config/config.default.js"
   },
+  "wechat": {
+    "debug": "/Users/czm/code/tools/be/config/config.default.js"
+  },
   "security": {
     "csrf": {
-      "refererWhiteList": "/Users/czm/code/tools/be/config/config.default.js",
-      "enable": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+      "enable": "/Users/czm/code/tools/be/config/config.default.js",
+      "ignore": "/Users/czm/code/tools/be/config/config.default.js",
       "type": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
       "ignoreJSON": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
       "useSession": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
@@ -37,7 +40,8 @@
       "sessionName": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
       "headerName": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
       "bodyName": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
-      "queryName": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js"
+      "queryName": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js"
     },
     "domainWhiteList": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
     "protocolWhiteList": "/Users/czm/code/tools/be/node_modules/egg-security/config/config.default.js",
@@ -196,6 +200,7 @@
       "egg-cluster": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
       "egg-scripts": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
       "egg-view-nunjucks": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
+      "fs-extra": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js",
       "lodash": "/Users/czm/code/tools/be/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {

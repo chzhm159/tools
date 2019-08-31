@@ -27,7 +27,8 @@
         "bodyName": "_csrf",
         "queryName": "_csrf",
         "refererWhiteList": [],
-        "matching": "<Function anonymous>"
+        "ignore": "/wechat",
+        "matching": "<Function pathMatch>"
       },
       "xframe": {
         "enable": true,
@@ -216,6 +217,7 @@
         "egg-cluster": "^1.25.0",
         "egg-scripts": "^2.11.0",
         "egg-view-nunjucks": "^2.2.0",
+        "fs-extra": "^8.1.0",
         "lodash": "^4.17.15"
       },
       "devDependencies": {
@@ -334,6 +336,9 @@
       "maxRetries": 3,
       "requestTimeout": 60000,
       "sniffOnStart": true
+    },
+    "wechat": {
+      "debug": true
     },
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": "~config~middleware",

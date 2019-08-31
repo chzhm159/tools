@@ -1,10 +1,10 @@
 exports.cluster = {
   listen: {
     port: 7001,
-    workers:2,
-    daemon:true,
+    workers: 2,
+    daemon: true,
     hostname: '127.0.0.1',
-    title:"eggjs-dream-dev"
+    title: "eggjs-dream-dev"
   }
 }
 
@@ -25,9 +25,13 @@ exports.esConfig = {
   sniffOnStart: true
 };
 
+exports.wechat = {
+  debug: true
+};
+
 exports.security = {
   csrf: {
-    refererWhiteList: [],       // referer white list
-  },
-}
-
+    enable: true,
+    ignore: "/wechat"
+  }
+};
