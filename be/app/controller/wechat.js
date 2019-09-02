@@ -73,12 +73,12 @@
           "traditional": [],
           "psychology": []
         };
-        let replyStr = '';
+        let replyStr = '娱乐,娱乐,娱乐.梦做完忘了就好! 解释,听听就好\n';
         if (!_.isEmpty(result.body.hits) && result.body.hits.hits.length > 0) {
           _.each(result.body.hits.hits, function(v, k, l) {
             tmp[v._source.tag].push(rmTerms(v._source.text));
           });
-          replyStr = `[通俗说]:\n${tmp.general.join('\n')}\n`;
+          replyStr += `[通俗说]:\n${tmp.general.join('\n')}\n`;
           if (!_.isEmpty(tmp.traditional)) {
             replyStr += `[典籍记]:\n${tmp.traditional.join('\n')}\n`;
           }

@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node node_modules/egg-scripts/bin/egg-scripts start --env=local --workers=2",
     "start": "egg-scripts start --daemon",
-    "stop": "egg-scripts stop"
+    "stop": "egg-scripts stop",
+    "restart": "egg-scripts stop && egg-scripts start --daemon"
   },
   "author": "",
   "license": "mit",
